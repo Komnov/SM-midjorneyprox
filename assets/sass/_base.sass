@@ -26,32 +26,50 @@ table
     margin: 0
 .row
     margin: 0
+.row >*
+    padding: 0
 // Обнуление стандартных стилей
 
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&family=Raleway:wght@300;400;500;600;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&display=swap')
+
 
 html
     font-size: 10px
-    font-family: 'Montserrat', 'Arial', sans-serif
+    font-family: 'Open Sans', sans-serif
     body
-        font-size: 1.6rem
-        color: #353535
-        background-color: #EEEEEE
-        font-weight: 500
-
-body
-    .h1__title
-        font-size: 40px
-        font-weight: 700
-        color: #424B62
-        line-height: 140%
-    .h3_title  
-        font-size: 40px
-        font-weight: 700
-        color: #424B62
-        margin: 0 0 60px 0
-    .block__margin 
-        margin: 110px 0 0 0
-
-
+        font-size: 1.8rem
+        color: #FFFFFF
+        background-color: #151816
+        font-weight: 300
+        .title_container
+            .h3__title
+                font-family: 'Orbitron', sans-serif
+                font-size: 35px
+                font-weight: 700
+                margin: 0 0 50px 0
+        .orbitron__font
+            font-family: 'Orbitron', sans-serif
+        .block__padding
+            padding: 0 0 100px 0
+        .btn
+            a
+                padding: 20px 95px
+                font-size: 2rem
+                font-weight: 700
+                background-image: url('../img/icons/btn_bg.svg')
+                display: inline-block
+                background-size: contain
+                background-repeat: no-repeat
+                background-position: center
+                color: #151816
+                text-decoration: none
+        b
+            font-weight: 700
+        .title_container.center
+            display: flex
+            justify-content: center
+            text-align: center
+            width: 100%
+        .section
+            width: 100%
