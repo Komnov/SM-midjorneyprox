@@ -88,6 +88,12 @@ html body .title_container.center {
   text-align: center;
   width: 100%;
 }
+html body .title_container.left {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  width: 100%;
+}
 html body .section {
   width: 100%;
 }
@@ -136,6 +142,9 @@ html body .section {
   width: 50%;
   padding: 0 0 0 25px;
 }
+.header .header__desc .header__desc_about .header__desc_txt {
+  line-height: 27px;
+}
 .header .header__desc .header__desc_about .header__desc_txt b {
   font-size: 20px;
 }
@@ -168,6 +177,13 @@ html body .section {
 }
 .footer .footer__container .item .messangers {
   margin: 40px 0 0 0;
+}
+.footer .footer__container .item .messangers a:not(:last-child) {
+  margin: 0 20px 0 0;
+}
+
+.footer * {
+  font-size: 1.6rem;
 }
 
 .gallery__list {
@@ -331,6 +347,7 @@ html body .section {
 .faq .accordion .accordion-body {
   max-width: 75%;
   padding: 25px 0 0 0;
+  font-size: 1.6rem;
 }
 .faq .accordion .accordion-body strong {
   font-weight: 300;
@@ -343,5 +360,151 @@ html body .section {
   .container {
     max-width: 1360px;
     padding: 0 0;
+  }
+}
+@media (max-width: 992px) {
+  html body .title_container .h3__title {
+    font-size: 2.4rem;
+    margin: 0 0 30px 0;
+    width: 100%;
+    text-align: center !important;
+  }
+  html body .block__padding {
+    padding: 0 0 60px 0;
+  }
+  html body .btn {
+    display: block;
+    width: 100%;
+  }
+  html body .btn a {
+    width: 100%;
+    background-size: cover;
+    border-radius: 18px;
+    padding: 20px 0;
+    display: block;
+  }
+  .container {
+    max-width: 95%;
+    padding: 0 0;
+  }
+  .header .header__title .txt {
+    font-size: 2rem;
+    padding: 60px 0 0 0;
+    line-height: 35px;
+  }
+  .header .header__desc {
+    flex-direction: column;
+    padding: 60px 0 60px 0;
+  }
+  .header .header__desc .header__desc_img {
+    width: 100%;
+  }
+  .header .header__desc .header__desc_img img {
+    max-width: 100%;
+  }
+  .header .header__desc .header__desc_about {
+    width: 100%;
+    padding: 30px 0 0 0;
+  }
+  .gallery__list {
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+  }
+  .gallery__list .gallery__item img {
+    max-width: 100%;
+    border-radius: 50px;
+  }
+  .impact {
+    background-size: cover;
+  }
+  .impact .impact__list {
+    flex-direction: column;
+  }
+  .impact .impact__list .impact__item {
+    max-width: 100%;
+  }
+  .impact .impact__list .impact__item .title {
+    font-size: 1.8rem;
+    margin: 0 0 20px 0;
+  }
+  .impact .impact__list .impact__item .num {
+    display: flex;
+    justify-content: center;
+  }
+  .impact .impact__list .impact__item .num img {
+    max-width: 55%;
+    margin: 0 auto;
+  }
+  .impact .impact__list .impact__item .sub__title {
+    font-size: 1.8rem;
+    margin: 20px 0 0 0;
+  }
+  .impact .impact__list .impact__item:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+  .levels .levels__list {
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+  }
+  .levels .levels__list .item {
+    padding: 30px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .levels .levels__list .item .img {
+    display: flex;
+    justify-content: center;
+  }
+  .levels .levels__list .item .img img {
+    max-width: 55%;
+  }
+  .levels .levels__list .item .desc {
+    margin: 0 0;
+  }
+  .levels .levels__list .item .desc .title {
+    justify-content: center;
+    padding: 10px 0 0 0;
+    font-size: 1.6rem;
+  }
+  .levels .levels__list .item .desc .title::after {
+    width: 18px;
+    height: 18px;
+    margin: 0 0 0 5px;
+    position: relative;
+    top: 2px;
+  }
+  .levels .levels__list .item .desc .txt {
+    font-size: 1.6rem;
+  }
+  .price .price__container {
+    padding: 30px;
+  }
+  .price .price__container .txt {
+    font-size: 1.6rem;
+  }
+  .faq {
+    background-size: cover;
+  }
+  .faq .accordion .accordion-item .accordion-button {
+    font-size: 1.6rem;
+  }
+  .faq .accordion .accordion-item .accordion-button:after {
+    width: 25px;
+    height: 25px;
+  }
+  .faq .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+    width: 25px;
+    height: 25px;
+  }
+  .faq .accordion .accordion-body {
+    font-size: 1.4rem;
+    max-width: 100%;
+  }
+  .footer .footer__container {
+    grid-template-columns: 1fr;
+  }
+  .footer .footer__container .item {
+    margin: 0 0 30px 0;
   }
 }
